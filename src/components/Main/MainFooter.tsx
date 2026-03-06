@@ -1,6 +1,6 @@
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import Image from "next/image";
-import {useTranslations} from 'next-intl';
-import {Link} from '@/i18n/routing';
 
 export const MainFooter = () => {
     const t = useTranslations('footer');
@@ -12,8 +12,8 @@ export const MainFooter = () => {
                     <div>
                         <Image
                             alt="Nusantara Aroma Craft Logo"
-                            src='/images/logo/nac-logo-official-horizontal.png'
-                            width={400}
+                            src="/images/logo/nac-logo-new.svg"
+                            width={225}
                             height={150}
                         />
                     </div>

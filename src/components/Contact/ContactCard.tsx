@@ -24,7 +24,7 @@ const ContactCard = () => {
 					<div className="bg-base-200/50 rounded-xl p-8 lg:p-16 flex items-center justify-center aspect-square">
 						<Image
 							alt="Nusantara Aroma Craft Logo"
-							src="/images/logo/nac-logo-official-vertical.png"
+							src="/images/logo/nac-logo-new.svg"
 							width={300}
 							height={200}
 							className="max-w-full h-auto"

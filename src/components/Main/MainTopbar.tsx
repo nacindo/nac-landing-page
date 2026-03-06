@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { Link } from '@/i18n/routing';
+import Image from 'next/image';
 import { LanguageSwitcher } from '../LanguageSwitcher';
 
 export const MainTopbar = () => {
@@ -89,9 +89,9 @@ export const MainTopbar = () => {
 							>
 								<Image
 									alt="Nusantara Aroma Craft Logo"
-									src="/images/logo/nac-logo-official-horizontal.svg"
-									width={150}
-									height={100}
+									src="/images/logo/nac-logo-new.svg"
+									width={75}
+									height={50}
 								/>
 							</Link>
 							<ul className="menu w-full gap-2 p-0 pt-4">

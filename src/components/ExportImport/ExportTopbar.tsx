@@ -91,9 +91,9 @@ export const ExportTopbar = () => {
 							>
 								<Image
 									alt="Nusantara Aroma Craft Logo"
-									src="/images/logo/nac-logo-official-horizontal.svg"
-									width={150}
-									height={100}
+									src="/images/logo/nac-logo-new.svg"
+									width={75}
+									height={50}
 								/>
 							</Link>
 							<ul className="menu w-full gap-2 p-0 pt-4">
