@@ -17,7 +17,7 @@ export const PerfumeCatalogDataEng: PerfumeCatalog[] = [
 			'Resinous and mystical',
 			'Commanding and bold presence',
 		],
-		imagePath: '/images/landing/3.png',
+		imagePath: '/images/landing/catalog-java-oudh.png',
 	},
 	{
 		price: 250000,
@@ -29,7 +29,7 @@ export const PerfumeCatalogDataEng: PerfumeCatalog[] = [
 			'Resinous and grounding',
 			'Captures Sumatran wilderness',
 		],
-		imagePath: '/images/landing/6.png',
+		imagePath: '/images/landing/catalog-sumatra-amber.png',
 	},
 	{
 		price: 230000,
@@ -41,7 +41,7 @@ export const PerfumeCatalogDataEng: PerfumeCatalog[] = [
 			'Inspired by Spice Islands',
 			'Nutmeg, clove, and pepper notes',
 		],
-		imagePath: '/images/landing/4.png',
+		imagePath: '/images/landing/catalog-pulau-rempah.png',
 	},
 	{
 		price: 250000,
@@ -53,7 +53,7 @@ export const PerfumeCatalogDataEng: PerfumeCatalog[] = [
 			'Inspired by mythical Garuda',
 			'Spicy and golden majesty',
 		],
-		imagePath: '/images/landing/5.png',
+		imagePath: '/images/landing/catalog-garuda-gold.png',
 	},
 	{
 		price: 230000,
@@ -64,7 +64,7 @@ export const PerfumeCatalogDataEng: PerfumeCatalog[] = [
 			'Captures serene Bali sunrise',
 			'Peaceful and uplifting',
 		],
-		imagePath: '/images/landing/2.png',
+		imagePath: '/images/landing/catalog-bali-sunrise.png',
 	},
 	{
 		price: 230000,
@@ -76,7 +76,7 @@ export const PerfumeCatalogDataEng: PerfumeCatalog[] = [
 			'Romantic and elegant',
 			'Night-blooming enchantment',
 		],
-		imagePath: '/images/landing/1.png',
+		imagePath: '/images/landing/catalog-melati-dream.png',
 	},
 	{
 		price: 180000,
@@ -87,7 +87,7 @@ export const PerfumeCatalogDataEng: PerfumeCatalog[] = [
 			'Invigorating and airy',
 			'Refreshing Sunda Strait breeze',
 		],
-		imagePath: '/images/landing/9.png',
+		imagePath: '/images/landing/catalog-sunda-breeze.png',
 	},
 	{
 		price: 199000,
@@ -99,7 +99,7 @@ export const PerfumeCatalogDataEng: PerfumeCatalog[] = [
 			'Essence of homeland',
 			'Grounding and rooted',
 		],
-		imagePath: '/images/landing/7.png',
+		imagePath: '/images/landing/catalog-tanah-air.png',
 	},
 	{
 		price: 180000,
@@ -111,7 +111,7 @@ export const PerfumeCatalogDataEng: PerfumeCatalog[] = [
 			'Indonesian vanilla richness',
 			'Comforting and indulgent',
 		],
-		imagePath: '/images/landing/10.png',
+		imagePath: '/images/landing/catalog-bumi-vanili.png',
 	},
 	{
 		price: 180000,
@@ -123,7 +123,7 @@ export const PerfumeCatalogDataEng: PerfumeCatalog[] = [
 			'Atmospheric and mysterious',
 			'Inspired by mystical highlands',
 		],
-		imagePath: '/images/landing/8.png',
+		imagePath: '/images/landing/catalog-pulau-kabut.png',
 	},
 ];
 
@@ -138,7 +138,7 @@ export const PerfumeCatalogDataId: PerfumeCatalog[] = [
 			'Beraroma resin dan mistis',
 			'Hadir dengan wibawa dan keberanian',
 		],
-		imagePath: '/images/landing/3.png',
+		imagePath: '/images/landing/catalog-java-oudh.png',
 	},
 	{
 		price: 250000,
@@ -150,7 +150,7 @@ export const PerfumeCatalogDataId: PerfumeCatalog[] = [
 			'Beraroma resin yang menenangkan',
 			'Mewakili liar alam Sumatra',
 		],
-		imagePath: '/images/landing/6.png',
+		imagePath: '/images/landing/catalog-sumatra-amber.png',
 	},
 	{
 		price: 230000,
@@ -162,7 +162,7 @@ export const PerfumeCatalogDataId: PerfumeCatalog[] = [
 			'Terinspirasi Kepulauan Rempah',
 			'Aroma pala, cengkeh, dan lada',
 		],
-		imagePath: '/images/landing/4.png',
+		imagePath: '/images/landing/catalog-pulau-rempah.png',
 	},
 	{
 		price: 250000,
@@ -174,7 +174,7 @@ export const PerfumeCatalogDataId: PerfumeCatalog[] = [
 			'Terinspirasi Garuda mitologis',
 			'Rempah hangat bernuansa keemasan',
 		],
-		imagePath: '/images/landing/5.png',
+		imagePath: '/images/landing/catalog-garuda-gold.png',
 	},
 	{
 		price: 230000,
@@ -186,7 +186,7 @@ export const PerfumeCatalogDataId: PerfumeCatalog[] = [
 			'Menangkap ketenangan fajar Bali',
 			'Menentramkan dan membangkitkan semangat',
 		],
-		imagePath: '/images/landing/2.png',
+		imagePath: '/images/landing/catalog-bali-sunrise.png',
 	},
 	{
 		price: 230000,
@@ -198,7 +198,7 @@ export const PerfumeCatalogDataId: PerfumeCatalog[] = [
 			'Romantis dan elegan',
 			'Pesona mekar malam',
 		],
-		imagePath: '/images/landing/1.png',
+		imagePath: '/images/landing/catalog-melati-dream.png',
 	},
 	{
 		price: 180000,
@@ -210,7 +210,7 @@ export const PerfumeCatalogDataId: PerfumeCatalog[] = [
 			'Menyegarkan dan ringan',
 			'Semilir Selat Sunda yang menyegarkan',
 		],
-		imagePath: '/images/landing/9.png',
+		imagePath: '/images/landing/catalog-sunda-breeze.png',
 	},
 	{
 		price: 199000,
@@ -222,7 +222,7 @@ export const PerfumeCatalogDataId: PerfumeCatalog[] = [
 			'Esensi tanah air',
 			'Menguatkan dan membumi',
 		],
-		imagePath: '/images/landing/7.png',
+		imagePath: '/images/landing/catalog-tanah-air.png',
 	},
 	{
 		price: 180000,
@@ -234,7 +234,7 @@ export const PerfumeCatalogDataId: PerfumeCatalog[] = [
 			'Kaya vanila Indonesia',
 			'Hangat, menenangkan, dan memanjakan',
 		],
-		imagePath: '/images/landing/10.png',
+		imagePath: '/images/landing/catalog-bumi-vanili.png',
 	},
 	{
 		price: 180000,
@@ -246,6 +246,6 @@ export const PerfumeCatalogDataId: PerfumeCatalog[] = [
 			'Atmosferik dan misterius',
 			'Terinspirasi dataran tinggi mistis',
 		],
-		imagePath: '/images/landing/8.png',
+		imagePath: '/images/landing/catalog-pulau-kabut.png',
 	},
 ];

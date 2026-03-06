@@ -23,7 +23,7 @@ export const WhoWeAre = () => {
 						<div className="lg:col-span-2 order-first lg:order-last flex justify-center">
 							<Image
 								alt="Nusantara Aroma Craft Logo"
-								src="/images/logo/nac-logo-official-vertical.png"
+								src="/images/logo/nac-logo-new.svg"
 								width={300}
 								height={200}
 								className="xl:w-[450px] xl:h-[300px]"
@@ -35,16 +35,14 @@ export const WhoWeAre = () => {
 							<h3 className="text-2xl font-medium sm:text-3xl">
 								{t('mainTitle')}
 							</h3>
-							<p className="text-base-content/80 mt-4 ">
-								{t('paragraph1')}
-							</p>
-							<p className="text-base-content/80 mt-4 ">
-								{t('paragraph2')}
-							</p>
+							<p className="text-base-content/80 mt-4 ">{t('paragraph1')}</p>
+							<p className="text-base-content/80 mt-4 ">{t('paragraph2')}</p>
 
 							<div className="mt-8 flex justify-center lg:justify-start">
 								<Link href="/about">
-									<button className="btn btn-primary">{t('readMoreButton')}</button>
+									<button className="btn btn-primary">
+										{t('readMoreButton')}
+									</button>
 								</Link>
 							</div>
 						</div>
