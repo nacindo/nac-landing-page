@@ -91,9 +91,9 @@ export const PerfumeCatalogDataEng: PerfumeCatalog[] = [
 	},
 	{
 		price: 199000,
-		title: 'TANAH AIR',
+		title: 'TENAH AIR',
 		description:
-			"TANAH AIR, meaning 'Earth and Water,' is the profound scent of home. This fragrance is a grounding journey through damp soil after the rain, lush green leaves, and ancient woods. It is a humble yet powerful tribute to the land that nourishes us, evoking a deep sense of belonging and roots.",
+			"TENAH AIR, meaning 'Earth and Water,' is the profound scent of home. This fragrance is a grounding journey through damp soil after the rain, lush green leaves, and ancient woods. It is a humble yet powerful tribute to the land that nourishes us, evoking a deep sense of belonging and roots.",
 		uniquePoints: [
 			'Earthy green woody',
 			'Essence of homeland',
@@ -214,12 +214,12 @@ export const PerfumeCatalogDataId: PerfumeCatalog[] = [
 	},
 	{
 		price: 199000,
-		title: 'TANAH AIR',
+		title: 'TENAH AIR',
 		description:
-			'TANAH AIR adalah aroma rumah yang mendalam. Wewangian ini mengajak menelusuri tanah lembap selepas hujan, daun hijau rimbun, dan kayu tua. Sederhana namun kuat, menjadi penghormatan rendah hati bagi bumi yang membesarkan kita, menumbuhkan rasa memiliki dan akar.',
+			'TENAH AIR adalah aroma rumah yang mendalam. Wewangian ini mengajak menelusuri tanah lembap selepas hujan, daun hijau rimbun, dan kayu tua. Sederhana namun kuat, menjadi penghormatan rendah hati bagi bumi yang membesarkan kita, menumbuhkan rasa memiliki dan akar.',
 		uniquePoints: [
 			'Hijau-kayu bernuansa tanah',
-			'Esensi tanah air',
+			'Esensi tenah air',
 			'Menguatkan dan membumi',
 		],
 		imagePath: '/images/landing/catalog-tanah-air.png',
