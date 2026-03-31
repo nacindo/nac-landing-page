@@ -23,17 +23,13 @@ export const PerfumeModal = () => {
 	const [currency, setCurrency] = useState<Currency>('IDR');
 
 	const perfumeSlug = searchParams.get('perfume');
-	const selectedPerfume = perfumeSlug
-		? findPerfumeBySlug(perfumeSlug, locale)
-		: null;
+	const selectedPerfume = perfumeSlug ? findPerfumeBySlug(perfumeSlug, locale) : null;
 	const isModalOpen = !!selectedPerfume;
 
 	const closeModal = useCallback(() => {
 		const params = new URLSearchParams(searchParams.toString());
 		params.delete('perfume');
-		const newUrl = params.toString()
-			? `?${params.toString()}`
-			: window.location.pathname;
+		const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
 		router.push(newUrl, { scroll: false });
 		document.body.style.overflow = 'unset';
 	}, [searchParams, router]);
@@ -64,15 +60,8 @@ export const PerfumeModal = () => {
 
 	return (
 		<div className="fixed inset-0 z-[9999999999] flex items-center justify-center p-4">
-			{/* Backdrop */}
-			<div
-				className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-				onClick={closeModal}
-			/>
-
-			{/* Modal Content */}
+			<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={closeModal} />
 			<div className="relative bg-white shadow-[0_16px_64px_rgba(0,0,0,0.2)] max-w-4xl w-full max-h-[90vh] flex flex-col overflow-hidden rounded-4xl">
-				{/* Close Button */}
 				<button
 					onClick={closeModal}
 					className="absolute top-4 right-4 z-10 bg-white/90 hover:bg-white rounded-full p-2.5 transition-all duration-300 hover:cursor-pointer hover:text-accent hover:scale-105 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
@@ -83,7 +72,6 @@ export const PerfumeModal = () => {
 				</button>
 
 				<div className="flex flex-col lg:flex-row flex-1 min-h-0">
-					{/* Image Section */}
 					<div className="lg:w-1/2 bg-accent/80 relative lg:p-4 shrink-0">
 						<div className="relative bg-accent w-full h-96 lg:h-full rounded-2xl">
 							<Image
@@ -95,11 +83,9 @@ export const PerfumeModal = () => {
 						</div>
 					</div>
 
-					{/* Content Section */}
 					<div className="lg:w-1/2 p-8 flex flex-col lg:justify-center flex-1 overflow-y-auto min-h-0">
 						<div className="space-y-5">
 
-							{/* Currency Switcher */}
 							<div className="flex gap-2">
 								{(['IDR', 'USD', 'SAR'] as Currency[]).map((c) => (
 									<button
@@ -123,41 +109,25 @@ export const PerfumeModal = () => {
 								))}
 							</div>
 
-							{/* Price */}
 							<div>
 								<p className="text-2xl font-medium tracking-wide text-accent">
 									{getDisplayPrice()}
 								</p>
 								{currency !== 'IDR' && (
 									<p className="text-xs text-gray-400 mt-1 tracking-wide">
-										≈ {formatPrice(selectedPerfume.price)} · approximate rate
+										approx. {formatPrice(selectedPerfume.price)}
 									</p>
 								)}
 							</div>
 
-							{/* Title */}
 							<h2 className="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.15] tracking-[0.04em]">
 								{selectedPerfume.title}
 							</h2>
 
-							{/* Character Badge */}
-							<div className="inline-flex items-center gap-2 bg-accent/10 px-4 py-2 rounded-full">
-								<span className="text-xs tracking-[0.15em] uppercase font-medium text-accent/80">
-									✦ {selectedPerfume.character}
-								</span>
-							</div>
-
-							{/* Personality */}
-							<p className="text-sm md:text-base text-gray-500 leading-relaxed font-light italic border-l-2 border-accent/30 pl-4">
-								{selectedPerfume.personality}
-							</p>
-
-							{/* Description */}
 							<p className="text-base md:text-lg text-gray-600 leading-relaxed md:leading-loose font-light tracking-wide">
 								{selectedPerfume.description}
 							</p>
 
-							{/* Unique Points */}
 							<div className="space-y-3">
 								{selectedPerfume.uniquePoints.map((point, index) => (
 									<div key={index} className="flex items-center space-x-3">
@@ -169,7 +139,6 @@ export const PerfumeModal = () => {
 								))}
 							</div>
 
-							{/* WhatsApp Button */}
 							<div className="pt-6 border-t border-gray-100">
 								
 									href={generateWhatsAppURL(
