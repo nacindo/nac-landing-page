@@ -53,13 +53,13 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} data-theme="light" data-scroll-behavior="smooth">
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} data-theme="light" data-scroll-behavior="smooth">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NextIntlClientProvider messages={messages}>
           {children}
           <div className='fixed bottom-6 right-6 z-50'>
             <div className='bg-green-600 p-4 rounded-full shadow-lg hover:bg-green-700 transition-colors cursor-pointer'>
-              <a href={generateWhatsAppURL("Hi PT NAC, I want to know more about your product!")} target="_blank" rel="noopener noreferrer" >
+             <a href={generateWhatsAppURL(locale === 'en' ? "Hi PT NAC, I want to know more about your product!" : "Halo PT NAC! Saya ingin mengetahui lebih lanjut tentang produk Anda.")} target="_blank" rel="noopener noreferrer" >
                 <WhatsAppIcon className="w-8 h-8 text-white" />
               </a>
             </div>
