@@ -4,18 +4,23 @@ import { WhatsAppIcon } from '@/components/icon/WhatsAppIcon';
 import {
 	findPerfumeBySlug,
 	formatPrice,
+	formatPriceUSD,
+	formatPriceSAR,
 	generateWhatsAppURL,
 } from '@/lib/perfume-utils';
 import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+
+type Currency = 'IDR' | 'USD' | 'SAR';
 
 export const PerfumeModal = () => {
 	const router = useRouter();
 	const searchParams = useSearchParams();
 	const t = useTranslations('perfume.modal');
 	const locale = useLocale();
+	const [currency, setCurrency] = useState<Currency>('IDR');
 
 	const perfumeSlug = searchParams.get('perfume');
 	const selectedPerfume = perfumeSlug
@@ -50,6 +55,12 @@ export const PerfumeModal = () => {
 	}, [isModalOpen, closeModal]);
 
 	if (!isModalOpen || !selectedPerfume) return null;
+
+	const getDisplayPrice = () => {
+		if (currency === 'USD') return formatPriceUSD(selectedPerfume.price);
+		if (currency === 'SAR') return formatPriceSAR(selectedPerfume.price);
+		return formatPrice(selectedPerfume.price);
+	};
 
 	return (
 		<div className="fixed inset-0 z-[9999999999] flex items-center justify-center p-4">
@@ -87,10 +98,42 @@ export const PerfumeModal = () => {
 					{/* Content Section */}
 					<div className="lg:w-1/2 p-8 flex flex-col lg:justify-center flex-1 overflow-y-auto min-h-0">
 						<div className="space-y-5">
+
+							{/* Currency Switcher */}
+							<div className="flex gap-2">
+								{(['IDR', 'USD', 'SAR'] as Currency[]).map((c) => (
+									<button
+										key={c}
+										onClick={() => setCurrency(c)}
+										style={{
+											padding: '4px 12px',
+											borderRadius: '999px',
+											fontSize: '11px',
+											fontWeight: currency === c ? '600' : '400',
+											letterSpacing: '0.1em',
+											border: currency === c ? '1.5px solid currentColor' : '1px solid rgba(0,0,0,0.15)',
+											opacity: currency === c ? 1 : 0.5,
+											cursor: 'pointer',
+											background: 'transparent',
+											transition: 'all 0.2s',
+										}}
+									>
+										{c}
+									</button>
+								))}
+							</div>
+
 							{/* Price */}
-							<p className="text-xs md:text-sm tracking-[0.2em] font-light uppercase text-accent/80">
-								{formatPrice(selectedPerfume.price)}
-							</p>
+							<div>
+								<p className="text-2xl font-medium tracking-wide text-accent">
+									{getDisplayPrice()}
+								</p>
+								{currency !== 'IDR' && (
+									<p className="text-xs text-gray-400 mt-1 tracking-wide">
+										≈ {formatPrice(selectedPerfume.price)} · approximate rate
+									</p>
+								)}
+							</div>
 
 							{/* Title */}
 							<h2 className="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.15] tracking-[0.04em]">
@@ -132,7 +175,7 @@ export const PerfumeModal = () => {
 									href={generateWhatsAppURL(
 										t('whatsappMessage', {
 											title: selectedPerfume.title,
-											price: formatPrice(selectedPerfume.price),
+											price: getDisplayPrice(),
 										})
 									)}
 									target="_blank"
@@ -143,6 +186,7 @@ export const PerfumeModal = () => {
 									{t('contactSeller')}
 								</a>
 							</div>
+
 						</div>
 					</div>
 				</div>
