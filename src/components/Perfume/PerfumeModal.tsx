@@ -35,27 +35,21 @@ export const PerfumeModal = () => {
 
 	useEffect(() => {
 		const handleEscape = (event: KeyboardEvent) => {
-			if (event.key === 'Escape') {
-				closeModal();
-			}
+			if (event.key === 'Escape') closeModal();
 		};
-
 		if (isModalOpen) {
 			document.body.style.overflow = 'hidden';
 			document.addEventListener('keydown', handleEscape);
 		} else {
 			document.body.style.overflow = 'unset';
 		}
-
 		return () => {
 			document.removeEventListener('keydown', handleEscape);
 			document.body.style.overflow = 'unset';
 		};
 	}, [isModalOpen, closeModal]);
 
-	if (!isModalOpen || !selectedPerfume) {
-		return null;
-	}
+	if (!isModalOpen || !selectedPerfume) return null;
 
 	return (
 		<div className="fixed inset-0 z-[9999999999] flex items-center justify-center p-4">
@@ -72,18 +66,8 @@ export const PerfumeModal = () => {
 					onClick={closeModal}
 					className="absolute top-4 right-4 z-10 bg-white/90 hover:bg-white rounded-full p-2.5 transition-all duration-300 hover:cursor-pointer hover:text-accent hover:scale-105 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
 				>
-					<svg
-						className="w-5 h-5"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth={1.5}
-							d="M6 18L18 6M6 6l12 12"
-						/>
+					<svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
 					</svg>
 				</button>
 
@@ -102,45 +86,38 @@ export const PerfumeModal = () => {
 
 					{/* Content Section */}
 					<div className="lg:w-1/2 p-8 flex flex-col lg:justify-center flex-1 overflow-y-auto min-h-0">
-						<div className="space-y-6">
-							{/* Price with refined styling */}
+						<div className="space-y-5">
+							{/* Price */}
 							<p className="text-xs md:text-sm tracking-[0.2em] font-light uppercase text-accent/80">
 								{formatPrice(selectedPerfume.price)}
 							</p>
 
-							{/* Title with luxury typography */}
-							<h2
-								className="
-                text-2xl md:text-3xl lg:text-4xl 
-                font-medium 
-                leading-[1.15]
-                tracking-[0.04em]
-                drop-shadow-[0_2px_8px_rgba(0,0,0,0.06)]
-              "
-							>
+							{/* Title */}
+							<h2 className="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.15] tracking-[0.04em]">
 								{selectedPerfume.title}
 							</h2>
 
-							{/* Description with elegant typography */}
-							<p
-								className="
-                text-base md:text-lg 
-                text-gray-600 
-                leading-relaxed md:leading-loose
-                font-light
-                tracking-wide
-              "
-							>
+							{/* Character Badge */}
+							<div className="inline-flex items-center gap-2 bg-accent/10 px-4 py-2 rounded-full">
+								<span className="text-xs tracking-[0.15em] uppercase font-medium text-accent/80">
+									✦ {selectedPerfume.character}
+								</span>
+							</div>
+
+							{/* Personality */}
+							<p className="text-sm md:text-base text-gray-500 leading-relaxed font-light italic border-l-2 border-accent/30 pl-4">
+								{selectedPerfume.personality}
+							</p>
+
+							{/* Description */}
+							<p className="text-base md:text-lg text-gray-600 leading-relaxed md:leading-loose font-light tracking-wide">
 								{selectedPerfume.description}
 							</p>
 
-							{/* Unique Points with refined styling */}
+							{/* Unique Points */}
 							<div className="space-y-3">
 								{selectedPerfume.uniquePoints.map((point, index) => (
-									<div
-										key={index}
-										className="flex items-center space-x-3"
-									>
+									<div key={index} className="flex items-center space-x-3">
 										<div className="w-1.5 h-1.5 bg-accent/70 rounded-full flex-shrink-0" />
 										<span className="text-gray-600 font-light tracking-wide text-sm md:text-base">
 											{point}
@@ -149,9 +126,9 @@ export const PerfumeModal = () => {
 								))}
 							</div>
 
-							{/* WhatsApp Contact Button with luxury styling */}
+							{/* WhatsApp Button */}
 							<div className="pt-6 border-t border-gray-100">
-								<a
+								
 									href={generateWhatsAppURL(
 										t('whatsappMessage', {
 											title: selectedPerfume.title,
@@ -160,22 +137,7 @@ export const PerfumeModal = () => {
 									)}
 									target="_blank"
 									rel="noopener noreferrer"
-									className="
-                    group
-                    inline-flex items-center justify-center 
-                    w-full 
-                    bg-primary hover:bg-green-600 
-                    text-white 
-                    font-light
-                    tracking-[0.1em]
-                    uppercase
-                    text-sm
-                    py-4 px-6 
-                    rounded-full 
-                    transition-all duration-500
-                    shadow-[0_4px_16px_rgba(0,0,0,0.15)]
-                    hover:shadow-[0_6px_24px_rgba(0,0,0,0.2)]
-                  "
+									className="group inline-flex items-center justify-center w-full bg-primary hover:bg-green-600 text-white font-light tracking-[0.1em] uppercase text-sm py-4 px-6 rounded-full transition-all duration-500 shadow-[0_4px_16px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.2)]"
 								>
 									<WhatsAppIcon className="w-4 h-4 mr-3 opacity-90" />
 									{t('contactSeller')}
