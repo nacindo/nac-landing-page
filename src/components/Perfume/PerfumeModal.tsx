@@ -58,6 +58,13 @@ export const PerfumeModal = () => {
 		return formatPrice(selectedPerfume.price);
 	};
 
+	const whatsappHref = generateWhatsAppURL(
+		t('whatsappMessage', {
+			title: selectedPerfume.title,
+			price: getDisplayPrice(),
+		})
+	);
+
 	return (
 		<div className="fixed inset-0 z-[9999999999] flex items-center justify-center p-4">
 			<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={closeModal} />
@@ -85,7 +92,6 @@ export const PerfumeModal = () => {
 
 					<div className="lg:w-1/2 p-8 flex flex-col lg:justify-center flex-1 overflow-y-auto min-h-0">
 						<div className="space-y-5">
-
 							<div className="flex gap-2">
 								{(['IDR', 'USD', 'SAR'] as Currency[]).map((c) => (
 									<button
@@ -141,21 +147,15 @@ export const PerfumeModal = () => {
 
 							<div className="pt-6 border-t border-gray-100">
 								
-									href={generateWhatsAppURL(
-										t('whatsappMessage', {
-											title: selectedPerfume.title,
-											price: getDisplayPrice(),
-										})
-									)}
+									href={whatsappHref}
 									target="_blank"
-								rel="noopener noreferrer"
-								className="group inline-flex items-center justify-center w-full bg-primary hover:bg-green-600 text-white font-light tracking-[0.1em] uppercase text-sm py-4 px-6 rounded-full transition-all duration-500 shadow-[0_4px_16px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.2)]"
-							&gt;
+									rel="noopener noreferrer"
+									className="group inline-flex items-center justify-center w-full bg-primary hover:bg-green-600 text-white font-light tracking-[0.1em] uppercase text-sm py-4 px-6 rounded-full transition-all duration-500 shadow-[0_4px_16px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.2)]"
+								>
 									<WhatsAppIcon className="w-4 h-4 mr-3 opacity-90" />
 									{t('contactSeller')}
 								</a>
 							</div>
-
 						</div>
 					</div>
 				</div>
