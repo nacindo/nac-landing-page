@@ -147,14 +147,8 @@ export const PerfumeModal = () => {
 
 							<div className="pt-6 border-t border-gray-100">
 								
-									href={whatsappHref}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="group inline-flex items-center justify-center w-full bg-primary hover:bg-green-600 text-white font-light tracking-[0.1em] uppercase text-sm py-4 px-6 rounded-full transition-all duration-500 shadow-[0_4px_16px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.2)]"
-								>
-									<WhatsAppIcon className="w-4 h-4 mr-3 opacity-90" />
-									{t('contactSeller')}
-								</a>
+									<a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center justify-center w-full bg-primary hover:bg-green-600 text-white font-light tracking-[0.1em] uppercase text-sm py-4 px-6 rounded-full transition-all duration-500"><WhatsAppIcon className="w-4 h-4 mr-3 opacity-90" />{t('contactSeller')}</a>
+
 							</div>
 						</div>
 					</div>
