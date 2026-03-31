@@ -1,8 +1,11 @@
 import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { LanguageSwitcher } from '../LanguageSwitcher';
 
 export const MainTopbar = () => {
+	const t = useTranslations('navigation');
+
 	return (
 		<div
 			id="layout-topbar"
@@ -24,10 +27,7 @@ export const MainTopbar = () => {
 
 					{/* Desktop: Logo on left */}
 					<div className="max-lg:hidden">
-						<Link
-							href="/"
-							className="text-2xl font-bold text-primary relative"
-						>
+						<Link href="/" className="text-2xl font-bold text-primary relative">
 							<Image
 								alt="Nusantara Aroma Craft Logo"
 								src="/images/logo/nac-logo-new.svg"
@@ -37,12 +37,9 @@ export const MainTopbar = () => {
 						</Link>
 					</div>
 
-					{/* Mobile: Logo on right */}
+					{/* Mobile: Logo center */}
 					<div className="lg:hidden">
-						<Link
-							href="/"
-							className="text-2xl font-bold text-primary relative"
-						>
+						<Link href="/" className="text-2xl font-bold text-primary relative">
 							<Image
 								alt="Nusantara Aroma Craft Logo"
 								src="/images/logo/nac-logo-new.svg"
@@ -52,16 +49,17 @@ export const MainTopbar = () => {
 						</Link>
 					</div>
 
+					{/* Desktop menu */}
 					<div className="max-lg:hidden">
 						<ul className="menu menu-horizontal gap-2 px-1">
 							<li className="font-medium">
-								<Link href="/">Home</Link>
+								<Link href="/">{t('home')}</Link>
 							</li>
 							<li className="font-medium">
-								<Link href="/about">About Us</Link>
+								<Link href="/about">{t('about')}</Link>
 							</li>
 							<li className="font-medium">
-								<Link href="/contact">Contact Us</Link>
+								<Link href="/contact">{t('contact')}</Link>
 							</li>
 							<li>
 								<LanguageSwitcher />
@@ -70,12 +68,9 @@ export const MainTopbar = () => {
 					</div>
 				</nav>
 
+				{/* Mobile drawer */}
 				<div className="drawer">
-					<input
-						id="menu-drawer"
-						type="checkbox"
-						className="drawer-toggle"
-					/>
+					<input id="menu-drawer" type="checkbox" className="drawer-toggle" />
 					<div className="drawer-side">
 						<label
 							htmlFor="menu-drawer"
@@ -83,10 +78,7 @@ export const MainTopbar = () => {
 							className="drawer-overlay"
 						></label>
 						<div className="bg-base-100 min-h-full w-60 p-5">
-							<Link
-								href="/"
-								className="text-2xl font-bold text-primary"
-							>
+							<Link href="/" className="text-2xl font-bold text-primary">
 								<Image
 									alt="Nusantara Aroma Craft Logo"
 									src="/images/logo/nac-logo-new.svg"
@@ -96,13 +88,13 @@ export const MainTopbar = () => {
 							</Link>
 							<ul className="menu w-full gap-2 p-0 pt-4">
 								<li className="font-medium">
-									<Link href="/">Home</Link>
+									<Link href="/">{t('home')}</Link>
 								</li>
 								<li className="font-medium">
-									<Link href="/about">About Us</Link>
+									<Link href="/about">{t('about')}</Link>
 								</li>
 								<li className="font-medium">
-									<Link href="/contact">Contact Us</Link>
+									<Link href="/contact">{t('contact')}</Link>
 								</li>
 								<li>
 									<LanguageSwitcher />
