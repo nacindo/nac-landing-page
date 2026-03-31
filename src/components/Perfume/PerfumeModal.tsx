@@ -49,10 +49,13 @@ export const PerfumeModal = () => {
 		return formatPrice(selectedPerfume.price);
 	};
 
-	const openWhatsApp = () => {
+	const handleWhatsApp = () => {
 		const msg = t('whatsappMessage', { title: selectedPerfume.title, price: getDisplayPrice() });
-		window.open(generateWhatsAppURL(msg), '_blank');
+		const url = generateWhatsAppURL(msg);
+		window.open(url, '_blank');
 	};
+
+	const btnClass = 'group inline-flex items-center justify-center w-full bg-primary hover:bg-green-600 text-white font-light tracking-[0.1em] uppercase text-sm py-4 px-6 rounded-full transition-all duration-500';
 
 	return (
 		<div className="fixed inset-0 z-[9999999999] flex items-center justify-center p-4">
@@ -85,7 +88,7 @@ export const PerfumeModal = () => {
 								)}
 							</div>
 							<h2 className="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.15] tracking-[0.04em]">{selectedPerfume.title}</h2>
-							<p className="text-base md:text-lg text-gray-600 leading-relaxed md:leading-loose font-light tracking-wide">{selectedPerfume.description}</p>
+							<p className="text-base md:text-lg text-gray-600 leading-relaxed font-light tracking-wide">{selectedPerfume.description}</p>
 							<div className="space-y-3">
 								{selectedPerfume.uniquePoints.map((point, index) => (
 									<div key={index} className="flex items-center space-x-3">
@@ -95,7 +98,7 @@ export const PerfumeModal = () => {
 								))}
 							</div>
 							<div className="pt-6 border-t border-gray-100">
-								<button onClick={openWhatsApp} className="group inline-flex items-center justify-center w-full bg-primary hover:bg-green-600 text-white font-light tracking-[0.1em] uppercase text-sm py-4 px-6 rounded-full transition-all duration-500 shadow-[0_4px_16px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.2)]">
+								<button onClick={handleWhatsApp} className={btnClass}>
 									<WhatsAppIcon className="w-4 h-4 mr-3 opacity-90" />
 									{t('contactSeller')}
 								</button>
