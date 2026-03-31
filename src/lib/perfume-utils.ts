@@ -1,6 +1,7 @@
 import {
 	PerfumeCatalogDataEng,
 	PerfumeCatalogDataId,
+	PerfumeCatalogDataAr,
 } from '@/data/perfume/Catalog';
 
 export const generateSlug = (title: string): string => {
@@ -13,7 +14,9 @@ export const generateSlug = (title: string): string => {
 
 export const findPerfumeBySlug = (slug: string, locale: string = 'id') => {
 	const perfumeData =
-		locale === 'en' ? PerfumeCatalogDataEng : PerfumeCatalogDataId;
+		locale === 'en' ? PerfumeCatalogDataEng :
+		locale === 'ar' ? PerfumeCatalogDataAr :
+		PerfumeCatalogDataId;
 	return perfumeData.find((perfume) => generateSlug(perfume.title) === slug);
 };
 
@@ -30,7 +33,5 @@ export const generateWhatsAppURL = (
 	sellerPhone: string = '6285710596000'
 ) => {
 	const encodedMessage = encodeURIComponent(whatsappMessage);
-	const whatsappURL = `https://wa.me/${sellerPhone}?text=${encodedMessage}`;
-
-	return whatsappURL;
+	return `https://wa.me/${sellerPhone}?text=${encodedMessage}`;
 };
