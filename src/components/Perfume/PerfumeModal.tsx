@@ -72,7 +72,7 @@ export const PerfumeModal = () => {
 							<Image src={selectedPerfume.imagePath} alt={selectedPerfume.title} fill className="object-cover hover:scale-110 transition-all ease-in-out rounded-2xl" />
 						</div>
 					</div>
-					<div className="lg:w-1/2 p-8 flex flex-col lg:justify-center flex-1 overflow-y-auto min-h-0">
+					<div className="lg:w-1/2 p-8 flex flex-col flex-1 overflow-y-auto min-h-0">
 						<div className="space-y-5">
 							<div className="flex gap-2">
 								{(['IDR', 'USD', 'SAR'] as Currency[]).map((c) => (
