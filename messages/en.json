@@ -5,7 +5,11 @@
     "contact": "Contact",
     "perfume": "NAC Perfume",
     "export": "NAC Export",
-    "services": "Export Import"
+    "services": "Export Import",
+    "catalog": "Catalog",
+    "perfumeHome": "Home",
+    "ourServices": "Our Services",
+    "ourCommodities": "Our Commodities"
   },
   "hero": {
     "title": "Discover Indonesia's Luxury Heritage",
