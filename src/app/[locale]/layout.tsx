@@ -1,8 +1,7 @@
 import { routing } from '@/i18n/routing';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { Geist, Geist_Mono } from "next/font/google";
-import localFont from 'next/font/local';
+import { Geist, Geist_Mono, Cairo } from "next/font/google";
 import { notFound } from 'next/navigation';
 import { WhatsAppIcon } from '@/components/icon/WhatsAppIcon';
 import { generateWhatsAppURL } from '@/lib/perfume-utils';
