@@ -41,14 +41,15 @@ const PerfumeHero = () => {
     id="perfume-home"
 >
 			<div className="container">
-				<div className="flex gap-8 items-center flex-col lg:gap-16">
+				<div className="flex gap-8 items-center flex-col lg:gap-16" style={{overflow: 'visible'}}>
 					<motion.div
-						className="space-y-8"
-						style={{
-							scale: textScale,
-							y: textY
-						}}
-					>
+    className="space-y-8"
+    style={{
+        scale: textScale,
+        y: textY,
+        overflow: 'visible'
+    }}
+>
 						<motion.h1
 							className="text-4xl font-bold tracking-tight lg:text-6xl text-center" style={{lineHeight: '2', overflow: 'visible', fontFamily: 'var(--font-cairo)'}}
 							initial={{ opacity: 0, y: 20 }}
