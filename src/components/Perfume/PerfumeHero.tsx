@@ -50,7 +50,7 @@ const PerfumeHero = () => {
 						}}
 					>
 						<motion.h1
-							className="text-4xl font-bold tracking-tight lg:text-6xl lg:leading-none text-center"
+							className="text-4xl font-bold tracking-tight lg:text-6xl leading-tight text-center"
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ ease: "easeOut", duration: 0.6, delay: 0 }}
