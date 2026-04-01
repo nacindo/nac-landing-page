@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cairo:wght@400;500;600;700&display=swap');
 
 /* Scoped perfume page container */
 .perfumeContainer {
@@ -16,7 +16,7 @@
   font-family: 'Playfair Display', serif;
 }
 
-/* Ensure headings use Montserrat within perfume container */
+/* Ensure headings use Montserrat within perfume container - but Cairo for Arabic */
 .perfumeContainer h1,
 .perfumeContainer h2,
 .perfumeContainer h3,
@@ -24,6 +24,19 @@
 .perfumeContainer h5,
 .perfumeContainer h6 {
   font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Override with Cairo for Arabic language */
+:lang(ar) .perfumeContainer h1,
+:lang(ar) .perfumeContainer h2,
+:lang(ar) .perfumeContainer h3,
+:lang(ar) .perfumeContainer h4,
+:lang(ar) .perfumeContainer h5,
+:lang(ar) .perfumeContainer h6,
+:lang(ar) .perfumeContainer p,
+:lang(ar) .perfumeContainer div,
+:lang(ar) .perfumeContainer span {
+  font-family: 'Cairo', sans-serif !important;
 }
 
 /* Apply Montserrat to navigation elements within perfume container */
