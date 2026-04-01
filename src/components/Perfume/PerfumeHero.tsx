@@ -56,7 +56,7 @@ const PerfumeHero = () => {
 							transition={{ ease: "easeOut", duration: 0.6, delay: 0 }}
 						>
 							{t('title')}
-							<span className="text-accent font-montserrat"> {t('subtitle')}</span>
+							<span className="text-accent"> {t('subtitle')}</span>
 						</motion.h1>
 						<motion.p
 							className="text-base-content/80 max-w-3xl text-xl leading-8 text-center mx-auto"
