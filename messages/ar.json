@@ -5,7 +5,11 @@
     "contact": "تواصل معنا",
     "perfume": "عطور NAC",
     "export": "تصدير NAC",
-    "services": "خدمات التصدير"
+    "services": "خدمات التصدير",
+    "catalog": "الكتالوج",
+    "perfumeHome": "الرئيسية",
+    "ourServices": "خدماتنا",
+    "ourCommodities": "سلعنا"
   },
   "hero": {
     "title": "اكتشف إرث الفخامة الإندونيسية",
