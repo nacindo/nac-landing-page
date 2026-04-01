@@ -36,10 +36,10 @@ const PerfumeHero = () => {
 
 	return (
 		<motion.section
-			ref={heroRef}
-			className="py-8 lg:py-20 max-h-[820px] lg:max-h-[894px] overflow-hidden"
-			id="perfume-home"
-		>
+    ref={heroRef}
+    className="py-8 lg:py-20"
+    id="perfume-home"
+>
 			<div className="container">
 				<div className="flex gap-8 items-center flex-col lg:gap-16">
 					<motion.div
