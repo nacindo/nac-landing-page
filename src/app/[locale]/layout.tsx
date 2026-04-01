@@ -3,7 +3,12 @@ import { routing } from '@/i18n/routing';
 import { generateWhatsAppURL } from '@/lib/perfume-utils';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Cairo } from "next/font/google";
+
+const cairo = Cairo({
+  variable: "--font-cairo",
+  subsets: ["arabic", "latin"],
+});
 import { notFound } from 'next/navigation';
 import "../globals.css";
 
@@ -53,8 +58,8 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} data-theme="light" data-scroll-behavior="smooth">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} data-theme="light" data-scroll-behavior="smooth" style={{ fontFamily: locale === 'ar' ? 'var(--font-cairo)' : undefined }}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable}`}>
         <NextIntlClientProvider messages={messages}>
           {children}
           <div className='fixed bottom-6 right-6 z-50'>
