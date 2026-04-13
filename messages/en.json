@@ -115,14 +115,18 @@
       "description": "Our team is committed to providing responses within 24 hours for all business and partnership inquiries."
     }
   },
-  "contactInquiry": {
+ "contactInquiry": {
     "name": "Full Name",
-    "email": "Email",
-    "company": "Company",
+    "email": "Company Email",
+    "company": "Company Name",
     "phone": "Phone Number",
     "subject": "Subject",
-    "message": "Message",
+    "message": "Your Message",
+    "optional": "optional",
     "submit": "Send Message",
+    "sending": "Sending...",
+    "successMessage": "Email client opened! Please send the email to complete your inquiry.",
+    "errorMessage": "Something went wrong. Please try again or contact us directly.",
     "namePlaceholder": "Your Name",
     "emailPlaceholder": "email@company.com",
     "companyPlaceholder": "Company Name",
