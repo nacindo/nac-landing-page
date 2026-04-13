@@ -74,6 +74,7 @@
     "secondaryCta": "Contact Export Team"
   },
   "exportSelectedCommodities": {
+    "seeAll": "See All Commodities"
     "title": "Selected Commodities",
     "subtitle": "Curated for consistent quality and export readiness. We keep specifications transparent and batches traceable.",
     "agarwood": {
