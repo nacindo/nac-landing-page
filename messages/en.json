@@ -455,6 +455,10 @@
     "customNote": "We also provide briquettes with custom specifications, and packaging with custom sizes, brands, and designs. Please contact us.",
     "noteFromUs": "Note from us",
     "backButton": "Back to Commodities",
-    "inquireButton": "Inquire Now"
+    "inquireButton": "Inquire Now",
+"cta": {
+  "title": "Interested in our briquettes?",
+  "description": "Contact us for pricing, samples, and custom specifications. We're ready to meet your business needs."
+}
   }
 }
