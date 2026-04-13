@@ -74,7 +74,7 @@
     "secondaryCta": "Hubungi Tim Ekspor"
   },
   "exportSelectedCommodities": {
-    "seeAll": "Lihat Semua Komoditi"
+    "seeAll": "Lihat Semua Komoditi",
     "title": "Komoditi Terpilih",
     "subtitle": "Dikurasi untuk kualitas konsisten dan kesiapan ekspor. Kami menjaga transparansi spesifikasi dan ketertelusuran batch.",
     "agarwood": {
@@ -118,12 +118,16 @@
   },
   "contactInquiry": {
     "name": "Nama Lengkap",
-    "email": "Email",
-    "company": "Perusahaan",
+    "email": "Email Perusahaan",
+    "company": "Nama Perusahaan",
     "phone": "Nomor Telepon",
     "subject": "Subjek",
-    "message": "Pesan",
+    "message": "Pesan Anda",
+    "optional": "opsional",
     "submit": "Kirim Pesan",
+    "sending": "Mengirim...",
+    "successMessage": "Email berhasil dibuka! Silakan kirim email untuk menyelesaikan permintaan Anda.",
+    "errorMessage": "Terjadi kesalahan. Silakan coba lagi atau hubungi kami langsung.",
     "namePlaceholder": "Nama Anda",
     "emailPlaceholder": "email@perusahaan.com",
     "companyPlaceholder": "Nama Perusahaan",
@@ -138,24 +142,14 @@
       "badgeText": "Koleksi Parfum",
       "title": "NAC parfum",
       "description": "Rasakan esensi Indonesia dalam setiap tetes. Koleksi parfum premium kami menghadirkan interpretasi modern dari warisan aromatik Nusantara yang telah memikat dunia selama berabad-abad. Setiap botol adalah hasil dari perpaduan sempurna antara bahan baku terpilih dan keahlian pengrajin parfum berpengalaman.",
-      "features": [
-        "Aroma Eksklusif Indonesia",
-        "Bahan Baku Pilihan",
-        "Proyeksi Aroma Menawan",
-        "Kemasan Koleksi Premium"
-      ],
+      "features": ["Aroma Eksklusif Indonesia", "Bahan Baku Pilihan", "Proyeksi Aroma Menawan", "Kemasan Koleksi Premium"],
       "buttonText": "Jelajahi Koleksi"
     },
     "export": {
       "badgeText": "Ekspor Impor",
       "title": "NAC Ekspor",
       "description": "Menghubungkan kekayaan Indonesia dengan pasar global premium. Layanan ekspor-impor kami menghadirkan komoditi berkualitas tinggi dengan standar internasional, memungkinkan mitra bisnis di seluruh dunia merasakan keunggulan produk Indonesia yang autentik dan premium.",
-      "features": [
-        "Kopi Premium Nusantara",
-        "Kayu Agarwood Berkualitas Tinggi",
-        "Jaringan Distribusi Global",
-        "Sertifikasi Berstandar Internasional"
-      ],
+      "features": ["Kopi Premium Nusantara", "Kayu Agarwood Berkualitas Tinggi", "Jaringan Distribusi Global", "Sertifikasi Berstandar Internasional"],
       "buttonText": "Layanan Kami"
     }
   },
@@ -210,22 +204,22 @@
       "description": "Melati Dream adalah perayaan identitas dan kekayaan aroma Nusantara. Diciptakan dengan cinta, presisi, dan rasa hormat pada warisan Indonesia, wewangian ini mengajak Anda merasakan jiwa, kekuatan, dan keanggunan yang abadi."
     },
     "features": [
-    {
-      "tagline": "Dari sebuah visi menjadi sebuah keharuman",
-      "title": "Aroma Awal Melati Nusantara",
-      "description": "Dibuka dengan harum melati yang lembut namun memikat, Melati Dream menghadirkan nuansa pertama yang terinspirasi dari kekayaan bunga Nusantara. Layaknya cahaya subuh yang membangunkan harapan, aroma ini menjadi lambang perjalanan panjang menuju sebuah mahakarya."
-    },
-    {
-      "tagline": "Elegansi yang diciptakan dengan presisi",
-      "title": "Inti Amber & Rempah Maluku",
-      "description": "Amber Sumatra yang hangat berpadu harmonis dengan rempah khas Kepulauan Maluku, menciptakan inti aromatik yang dalam, tenang, dan memancarkan karakter Indonesia. Sebuah keanggunan yang dibentuk oleh seleksi bahan baku tanpa kompromi."
-    },
-    {
-      "tagline": "Seni yang matang dalam setiap tetes",
-      "title": "Proses “Heat & Pulse”",
-      "description": "Melalui proses Heat & Pulse — metode pematangan yang memperhalus setiap elemen — Melati Dream hadir sebagai Extrait de Parfum berkualitas tinggi. Setiap tetesnya lembut pada kulit, tahan lama, dan memancarkan pesona mewah yang tenang namun kuat."
-    }
-  ],
+      {
+        "tagline": "Dari sebuah visi menjadi sebuah keharuman",
+        "title": "Aroma Awal Melati Nusantara",
+        "description": "Dibuka dengan harum melati yang lembut namun memikat, Melati Dream menghadirkan nuansa pertama yang terinspirasi dari kekayaan bunga Nusantara. Layaknya cahaya subuh yang membangunkan harapan, aroma ini menjadi lambang perjalanan panjang menuju sebuah mahakarya."
+      },
+      {
+        "tagline": "Elegansi yang diciptakan dengan presisi",
+        "title": "Inti Amber & Rempah Maluku",
+        "description": "Amber Sumatra yang hangat berpadu harmonis dengan rempah khas Kepulauan Maluku, menciptakan inti aromatik yang dalam, tenang, dan memancarkan karakter Indonesia. Sebuah keanggunan yang dibentuk oleh seleksi bahan baku tanpa kompromi."
+      },
+      {
+        "tagline": "Seni yang matang dalam setiap tetes",
+        "title": "Proses Heat & Pulse",
+        "description": "Melalui proses Heat & Pulse — metode pematangan yang memperhalus setiap elemen — Melati Dream hadir sebagai Extrait de Parfum berkualitas tinggi. Setiap tetesnya lembut pada kulit, tahan lama, dan memancarkan pesona mewah yang tenang namun kuat."
+      }
+    ],
     "card": {
       "viewDetails": "LIHAT DETAIL"
     },
@@ -339,60 +333,31 @@
       {
         "name": "Agarwood (Oud) & Minyak Esensial",
         "description": "Serpihan oud Indonesia langka, minyak oud, dan minyak esensial dengan profil olfaktori khas yang dikurasi untuk parfum.",
-        "points": [
-          "Grade & batch terpilih",
-          "Pemeriksaan GC-MS & organoleptik",
-          "Pengenceran & kemasan khusus"
-        ]
+        "points": ["Grade & batch terpilih", "Pemeriksaan GC-MS & organoleptik", "Pengenceran & kemasan khusus"]
       },
       {
         "name": "Biji Kopi Premium",
         "description": "Arabika dan Robusta dari Sumatra, Jawa, dan Sulawesi—lot yang dapat dilacak dengan catatan cupping dan kontrol kelembaban.",
-        "points": [
-          "Opsi specialty-grade",
-          "Kontrol ukuran layar & cacat",
-          "Kemasan ekspor kantong katup"
-        ]
+        "points": ["Opsi specialty-grade", "Kontrol ukuran layar & cacat", "Kemasan ekspor kantong katup"]
       },
       {
         "name": "Briket (Shisha & BBQ)",
         "description": "Briket tempurung kelapa premium dengan kandungan karbon tetap tinggi, abu rendah, dan ukuran konsisten untuk aplikasi shisha dan barbecue.",
-        "points": [
-          "Abu rendah, tahan bakar lama",
-          "Berbagai ukuran tersedia",
-          "Inspeksi SGS atas permintaan"
-        ],
+        "points": ["Abu rendah, tahan bakar lama", "Berbagai ukuran tersedia", "Inspeksi SGS atas permintaan"],
         "types": [
           {
             "name": "Briket Shisha",
             "description": "Briket tempurung kelapa alami yang dirancang untuk panas konsisten dan asap minimal dalam aplikasi hookah.",
             "image": "/images/placeholder-shisha.jpg",
-            "sizes": [
-              "Kubus: 20×20×20mm, 22×22×22mm, 25×25×25mm, 26×26×26mm",
-              "Datar: 25×25×15mm"
-            ],
-            "specs": [
-              "Kadar abu: 1,8% – 2,5%",
-              "Waktu bakar: 90 – 120 menit",
-              "Karbon tetap: Min 80%",
-              "Kelembaban: Maks 5%"
-            ]
+            "sizes": ["Kubus: 20x20x20mm, 22x22x22mm, 25x25x25mm, 26x26x26mm", "Datar: 25x25x15mm"],
+            "specs": ["Kadar abu: 1,8% - 2,5%", "Waktu bakar: 90 - 120 menit", "Karbon tetap: Min 80%", "Kelembaban: Maks 5%"]
           },
           {
             "name": "Briket BBQ",
             "description": "Briket arang berkualitas tinggi untuk memanggang dengan waktu bakar lama, tanpa asap, dan kualitas food-grade.",
             "image": "/images/placeholder-bbq.jpg",
-            "sizes": [
-              "Heksagonal: 50×200mm, 50×150mm, 50×100mm, 40×200mm, 40×150mm",
-              "Persegi Panjang: 40×200mm, 50×200mm",
-              "Prisma: 40×40×80mm"
-            ],
-            "specs": [
-              "Kadar abu: 7% – 20%",
-              "Waktu bakar: 5 – 9 jam",
-              "Karbon tetap: 65% – 70%",
-              "Tanpa asap • Food grade"
-            ]
+            "sizes": ["Heksagonal: 50x200mm, 50x150mm, 50x100mm, 40x200mm, 40x150mm", "Persegi Panjang: 40x200mm, 50x200mm", "Prisma: 40x40x80mm"],
+            "specs": ["Kadar abu: 7% - 20%", "Waktu bakar: 5 - 9 jam", "Karbon tetap: 65% - 70%", "Tanpa asap - Food grade"]
           }
         ]
       }
@@ -419,64 +384,64 @@
     "shisha": {
       "title": "Briket Shisha",
       "subtitle": "Dikenal juga sebagai arang hookah atau shisha",
-      "description": "Briket ini adalah jenis arang khusus yang digunakan untuk menghisap tembakau beraroma di dalam pipa air yang disebut hookah atau pipa shisha. Briket shisha dirancang khusus untuk memberikan sumber panas yang konsisten dan tahan lama untuk campuran tembakau sehingga dapat dipanaskan dan diuapkan tanpa pembakaran langsung.",
-      "paragraph2": "Briket shisha kami terbuat dari bahan alami. Mereka diformulasikan khusus untuk membakar pada suhu yang lebih rendah dan menghasilkan asap minimal sambil tetap menghasilkan panas yang cukup untuk menguapkan tembakau beraroma.",
-      "paragraph3": "Briket shisha dapat bervariasi dalam bentuk dan ukuran tetapi umumnya tersedia dalam bentuk kubus dan datar. Briket ini sering diinfus dengan aditif atau perasa untuk meningkatkan pengalaman merokok dan menambahkan rasa halus pada tembakau.",
-      "benefits": "Briket shisha telah mendapatkan popularitas karena output panas yang konsisten, waktu bakar yang lebih lama, dan produksi asap yang lebih sedikit dibandingkan dengan arang tradisional. Briket ini memberikan pengalaman merokok yang lebih halus dan menyenangkan, memungkinkan pengguna menikmati rasa tembakau tanpa kekerasan pembakaran langsung.",
-      "note": "Briket shisha secara khusus ditujukan untuk digunakan dengan hookah atau pipa shisha dan tidak boleh digunakan sebagai bahan bakar memasak atau dalam aplikasi lain.",
+      "description": "Briket ini adalah jenis arang khusus yang digunakan untuk menghisap tembakau beraroma di dalam pipa air yang disebut hookah atau pipa shisha.",
+      "paragraph2": "Briket shisha kami terbuat dari bahan alami. Mereka diformulasikan khusus untuk membakar pada suhu yang lebih rendah dan menghasilkan asap minimal.",
+      "paragraph3": "Briket shisha dapat bervariasi dalam bentuk dan ukuran tetapi umumnya tersedia dalam bentuk kubus dan datar.",
+      "benefits": "Briket shisha telah mendapatkan popularitas karena output panas yang konsisten, waktu bakar yang lebih lama, dan produksi asap yang lebih sedikit.",
+      "note": "Briket shisha secara khusus ditujukan untuk digunakan dengan hookah atau pipa shisha dan tidak boleh digunakan sebagai bahan bakar memasak.",
       "shapes": {
         "cube": {
           "name": "Kubus",
-          "sizes": ["20 × 20 × 20 mm", "22 × 22 × 22 mm", "25 × 25 × 25 mm", "26 × 26 × 26 mm"]
+          "sizes": ["20 x 20 x 20 mm", "22 x 22 x 22 mm", "25 x 25 x 25 mm", "26 x 26 x 26 mm"]
         },
         "flat": {
           "name": "Datar",
-          "sizes": ["25 × 25 × 15 mm"]
+          "sizes": ["25 x 25 x 15 mm"]
         }
       },
       "specs": {
-        "ashContent": "Kadar abu: 1,8% – 2,5%",
+        "ashContent": "Kadar abu: 1,8% - 2,5%",
         "ashColor": "Warna abu: Abu-abu Terang / Alami",
-        "burningTime": "Waktu bakar: 90 – 120 menit",
-        "ignitionTime": "Waktu penyalaan: <4 menit",
+        "burningTime": "Waktu bakar: 90 - 120 menit",
+        "ignitionTime": "Waktu penyalaan: kurang dari 4 menit",
         "fixCarbon": "Karbon tetap: Minimal 80%",
         "moisture": "Kelembaban: Maks 5%",
         "volatileMatter": "Zat volatil: 14%",
-        "calorificValue": "Nilai kalori: 7000 – 7500 Kcal/kg"
+        "calorificValue": "Nilai kalori: 7000 - 7500 Kcal/kg"
       }
     },
     "bbq": {
       "title": "Briket Barbecue",
       "subtitle": "Dikenal juga sebagai briket arang",
-      "description": "Briket barbecue adalah jenis bahan bakar yang digunakan untuk memanggang dan barbecue. Briket ini dirancang khusus untuk memberikan sumber panas yang konsisten dan terkontrol untuk memasak di luar ruangan.",
-      "paragraph2": "Briket barbecue biasanya terbuat dari kombinasi arang, batubara, kayu, atau bahan organik lainnya yang telah diproses dan dipadatkan menjadi bentuk yang seragam. Bahan-bahan sering dicampur dengan pengikat atau aditif untuk membantu briket mempertahankan bentuknya dan memberikan karakteristik pembakaran yang konsisten.",
-      "paragraph3": "Proses pembuatan melibatkan karbonisasi bahan organik pada suhu tinggi untuk menghilangkan kotoran dan kelembaban, menghasilkan sumber bahan bakar yang lebih terkonsentrasi dan efisien. Proses karbonisasi juga berkontribusi pada pembentukan warna hitam khas pada briket arang ini.",
-      "benefits": "Briket barbecue menawarkan beberapa keunggulan untuk memanggang dan barbecue. Mereka memberikan sumber panas yang stabil dan tahan lama, memungkinkan memasak merata dan suhu yang konsisten. Briket ini juga menghasilkan lebih sedikit asap dibandingkan bentuk arang lainnya, menghasilkan lebih sedikit kobaran api dan pengalaman memanggang yang lebih bersih.",
-      "varieties": "Briket barbecue sering tersedia dalam berbagai bentuk dan ukuran untuk mengakomodasi kebutuhan memanggang yang berbeda. Yang paling umum di pasaran adalah bentuk batang dan heksagonal. Namun, mereka juga dapat berupa briket berbentuk bantal tradisional, serta briket yang lebih besar untuk sesi memasak yang lebih lama atau panggangan yang lebih besar.",
-      "note": "Briket barbecue secara khusus dirancang untuk memasak di luar ruangan dan tidak boleh digunakan di dalam ruangan atau di ruang tertutup karena pelepasan karbon monoksida selama pembakaran. Penting juga untuk mengikuti pedoman keselamatan yang tepat saat menangani dan membuang briket bekas untuk mencegah bahaya kebakaran.",
+      "description": "Briket barbecue adalah jenis bahan bakar yang digunakan untuk memanggang dan barbecue.",
+      "paragraph2": "Briket barbecue biasanya terbuat dari kombinasi arang, batubara, kayu, atau bahan organik lainnya.",
+      "paragraph3": "Proses pembuatan melibatkan karbonisasi bahan organik pada suhu tinggi untuk menghilangkan kotoran dan kelembaban.",
+      "benefits": "Briket barbecue menawarkan beberapa keunggulan untuk memanggang dan barbecue. Mereka memberikan sumber panas yang stabil dan tahan lama.",
+      "varieties": "Briket barbecue sering tersedia dalam berbagai bentuk dan ukuran untuk mengakomodasi kebutuhan memanggang yang berbeda.",
+      "note": "Briket barbecue secara khusus dirancang untuk memasak di luar ruangan dan tidak boleh digunakan di dalam ruangan.",
       "shapes": {
         "hexagonal": {
           "name": "Heksagonal",
-          "sizes": ["50 × 200 mm", "50 × 150 mm", "50 × 100 mm", "50 × 50 mm", "40 × 200 mm", "40 × 150 mm", "40 × 100 mm", "40 × 50 mm"]
+          "sizes": ["50 x 200 mm", "50 x 150 mm", "50 x 100 mm", "50 x 50 mm", "40 x 200 mm", "40 x 150 mm", "40 x 100 mm", "40 x 50 mm"]
         },
         "rectangle": {
           "name": "Persegi Panjang",
-          "sizes": ["40 × 200 mm", "50 × 200 mm"]
+          "sizes": ["40 x 200 mm", "50 x 200 mm"]
         },
         "prism": {
           "name": "Prisma Persegi Panjang",
-          "sizes": ["40 × 40 × 80 mm"]
+          "sizes": ["40 x 40 x 80 mm"]
         }
       },
       "specs": {
-        "ashContent": "Kadar abu: 7% – 20%",
+        "ashContent": "Kadar abu: 7% - 20%",
         "ashColor": "Warna abu: Abu-abu Terang / Alami",
-        "burningTime": "Waktu bakar: 5 – 9 jam",
-        "ignitionTime": "Waktu penyalaan: <5 menit",
-        "fixCarbon": "Karbon tetap: 65% – 70%",
+        "burningTime": "Waktu bakar: 5 - 9 jam",
+        "ignitionTime": "Waktu penyalaan: kurang dari 5 menit",
+        "fixCarbon": "Karbon tetap: 65% - 70%",
         "moisture": "Kelembaban: Maks 5%",
         "volatileMatter": "Zat volatil: 14%",
-        "calorificValue": "Nilai kalori: 6400 – 7200 Kcal/kg"
+        "calorificValue": "Nilai kalori: 6400 - 7200 Kcal/kg"
       },
       "features": ["Tanpa asap", "Tanpa bau", "Tanpa percikan api", "Tanpa bahan kimia", "Food grade"]
     },
