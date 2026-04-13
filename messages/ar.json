@@ -115,14 +115,18 @@
       "description": "يلتزم فريقنا بالرد خلال 24 ساعة على جميع استفسارات الأعمال والشراكة."
     }
   },
-  "contactInquiry": {
+ "contactInquiry": {
     "name": "الاسم الكامل",
-    "email": "البريد الإلكتروني",
-    "company": "الشركة",
+    "email": "البريد الإلكتروني للشركة",
+    "company": "اسم الشركة",
     "phone": "رقم الهاتف",
     "subject": "الموضوع",
-    "message": "الرسالة",
+    "message": "رسالتك",
+    "optional": "اختياري",
     "submit": "إرسال الرسالة",
+    "sending": "جارٍ الإرسال...",
+    "successMessage": "تم فتح برنامج البريد الإلكتروني! يرجى إرسال البريد الإلكتروني لإتمام استفسارك.",
+    "errorMessage": "حدث خطأ ما. يرجى المحاولة مرة أخرى أو التواصل معنا مباشرة.",
     "namePlaceholder": "اسمك",
     "emailPlaceholder": "email@company.com",
     "companyPlaceholder": "اسم الشركة",
