@@ -63,7 +63,7 @@
   "perfumeHero": {
     "title": "Melati Dream,",
     "subtitle": "Nusantara Harmony",
-    "description": "Inspired by the long journey of Indonesia’s aromatic heritage. MELATI DREAM embodies the belief that the richness of the Archipelago deserves a place beside the world’s finest fragrances. The intoxicating jasmine, warm Sumatran amber, and Maluku island spices create a scent that is elegant, soulful, and enduring. A beauty born from vision and dedication.",
+    "description": "Inspired by the long journey of Indonesia's aromatic heritage. MELATI DREAM embodies the belief that the richness of the Archipelago deserves a place beside the world's finest fragrances. The intoxicating jasmine, warm Sumatran amber, and Maluku island spices create a scent that is elegant, soulful, and enduring. A beauty born from vision and dedication.",
     "buyButton": "Buy Now"
   },
   "exportHero": {
@@ -74,7 +74,7 @@
     "secondaryCta": "Contact Export Team"
   },
   "exportSelectedCommodities": {
-    "seeAll": "See All Commodities"
+    "seeAll": "See All Commodities",
     "title": "Selected Commodities",
     "subtitle": "Curated for consistent quality and export readiness. We keep specifications transparent and batches traceable.",
     "agarwood": {
@@ -116,7 +116,7 @@
       "description": "Our team is committed to providing responses within 24 hours for all business and partnership inquiries."
     }
   },
- "contactInquiry": {
+  "contactInquiry": {
     "name": "Full Name",
     "email": "Company Email",
     "company": "Company Name",
@@ -139,27 +139,17 @@
     "title": "Our Brands",
     "subtitle": "Two flagship business lines that are the pride and representation of Nusantara Aroma Craft in the global market",
     "perfume": {
-      "badgeText": "perfume Collection",
-      "title": "NAC perfume",
+      "badgeText": "Perfume Collection",
+      "title": "NAC Perfume",
       "description": "Taste the essence of Indonesia in every drop. Our premium perfume collection presents a modern interpretation of Nusantara's aromatic heritage that has captivated the world for centuries. Each bottle is the result of a perfect blend of selected raw materials and experienced perfumer expertise.",
-      "features": [
-        "Exclusive Indonesian Aroma",
-        "Selected Raw Materials",
-        "Captivating Aroma Projection",
-        "Premium Collection Packaging"
-      ],
+      "features": ["Exclusive Indonesian Aroma", "Selected Raw Materials", "Captivating Aroma Projection", "Premium Collection Packaging"],
       "buttonText": "Explore Collection"
     },
     "export": {
       "badgeText": "Export Import",
       "title": "NAC Export",
       "description": "Connecting Indonesia's wealth with global premium markets. Our export-import services deliver high-quality commodities with international standards, enabling business partners worldwide to experience the excellence of authentic and premium Indonesian products.",
-      "features": [
-        "Global Distribution Network",
-        "Premium Nusantara Coffee",
-        "High-Quality Agarwood",
-        "International Standard Certification"
-      ],
+      "features": ["Global Distribution Network", "Premium Nusantara Coffee", "High-Quality Agarwood", "International Standard Certification"],
       "buttonText": "Our Services"
     }
   },
@@ -213,11 +203,11 @@
       "subtitle": "Embrace quiet elegance and captivating charm",
       "description": "Melati Dream is a celebration of identity and the aromatic richness of the Archipelago. Crafted with love, precision, and deep respect for Indonesian heritage, this fragrance invites you to experience its eternal soul, strength, and elegance."
     },
-     "features": [
+    "features": [
       {
         "tagline": "From a vision to an unforgettable aroma",
         "title": "Opening Notes of Nusantara Jasmine",
-        "description": "Opening with soft yet captivating jasmine, Melati Dream introduces a first impression inspired by Indonesia’s floral treasures. Like dawn awakening the horizon, this scent symbolizes the beginning of a journey toward a true masterpiece."
+        "description": "Opening with soft yet captivating jasmine, Melati Dream introduces a first impression inspired by Indonesia's floral treasures. Like dawn awakening the horizon, this scent symbolizes the beginning of a journey toward a true masterpiece."
       },
       {
         "tagline": "Elegance shaped with precision",
@@ -226,7 +216,7 @@
       },
       {
         "tagline": "Craft refined in every drop",
-        "title": "The “Heat & Pulse” Technique",
+        "title": "The Heat & Pulse Technique",
         "description": "Through the Heat & Pulse accelerated maturation process, Melati Dream becomes a high-quality Extrait de Parfum. Each drop is smooth on the skin, long-lasting, and radiates a quiet yet powerful luxury."
       }
     ],
@@ -259,7 +249,7 @@
       {
         "number": "4",
         "title": "Packing & Shipment.",
-        "description": "Commodity‑appropriate packing, insurance options, tracking updates, and on‑time delivery."
+        "description": "Commodity-appropriate packing, insurance options, tracking updates, and on-time delivery."
       }
     ],
     "viewServicesButton": "View Our Services"
@@ -274,14 +264,14 @@
       },
       {
         "title": "Rigorous QC",
-        "description": "Multi‑stage checks with optional third‑party inspection (SGS)."
+        "description": "Multi-stage checks with optional third-party inspection (SGS)."
       },
       {
         "title": "Full Compliance",
         "description": "CoA, MSDS, phytosanitary, export permits, and HS coding."
       },
       {
-        "title": "On‑Time Logistics",
+        "title": "On-Time Logistics",
         "description": "Clear milestones, insurance options, and shipment tracking."
       }
     ]
@@ -306,7 +296,7 @@
         },
         {
           "title": "Quality Control",
-          "description": "Commodity‑specific checks: GC‑MS & organoleptic for oils; moisture/ash/fixed carbon for Briquette; screen size, defects, and moisture for coffee. Optional third‑party inspections (SGS)."
+          "description": "Commodity-specific checks: GC-MS & organoleptic for oils; moisture/ash/fixed carbon for Briquette; screen size, defects, and moisture for coffee. Optional third-party inspections (SGS)."
         },
         {
           "title": "Documentation & Compliance",
@@ -323,7 +313,7 @@
       "points": [
         "Batch traceability and retained samples",
         "Certificates: CoA, MSDS, phytosanitary as applicable",
-        "Optional SGS/third‑party inspection and pre‑shipment checks",
+        "Optional SGS/third-party inspection and pre-shipment checks",
         "Clear specs and tolerance ranges agreed upfront"
       ]
     },
@@ -343,60 +333,31 @@
       {
         "name": "Agarwood (Oud) & Essential Oils",
         "description": "Rare Indonesian oud chips, oud oils, and essential oils with distinctive olfactory profiles curated for perfumery.",
-        "points": [
-          "Selected grades & batches",
-          "GC‑MS & organoleptic checks",
-          "Custom dilutions & packaging"
-        ]
+        "points": ["Selected grades & batches", "GC-MS & organoleptic checks", "Custom dilutions & packaging"]
       },
       {
         "name": "Premium Coffee Beans",
         "description": "Arabica and Robusta from Sumatra, Java, and Sulawesi—traceable lots with cupping notes and moisture control.",
-        "points": [
-          "Specialty‑grade options",
-          "Screen size & defect control",
-          "Valve bag export packaging"
-        ]
+        "points": ["Specialty-grade options", "Screen size & defect control", "Valve bag export packaging"]
       },
       {
         "name": "Briquettes (Shisha & BBQ)",
         "description": "Premium coconut shell briquettes with high fixed carbon, low ash, and consistent sizing for both shisha and barbecue applications.",
-        "points": [
-          "Low ash, long‑burning",
-          "Multiple sizes available",
-          "SGS inspection on request"
-        ],
+        "points": ["Low ash, long-burning", "Multiple sizes available", "SGS inspection on request"],
         "types": [
           {
             "name": "Shisha Briquettes",
             "description": "Natural coconut shell briquettes designed for consistent heat and minimal smoke in hookah applications.",
             "image": "/images/landing/shisha-briquettes.jpg",
-            "sizes": [
-              "Cube: 20×20×20mm, 22×22×22mm, 25×25×25mm, 26×26×26mm",
-              "Flat: 25×25×15mm"
-            ],
-            "specs": [
-              "Ash content: 1.8% – 2.5%",
-              "Burn time: 90 – 120 minutes",
-              "Fixed carbon: Min 80%",
-              "Moisture: Max 5%"
-            ]
+            "sizes": ["Cube: 20x20x20mm, 22x22x22mm, 25x25x25mm, 26x26x26mm", "Flat: 25x25x15mm"],
+            "specs": ["Ash content: 1.8% - 2.5%", "Burn time: 90 - 120 minutes", "Fixed carbon: Min 80%", "Moisture: Max 5%"]
           },
           {
             "name": "BBQ Briquettes",
             "description": "High-quality Briquette briquettes for grilling with long burn time, smokeless, and food-grade quality.",
             "image": "/images/landing/bbq-briquettes.webp",
-            "sizes": [
-              "Hexagonal: 50×200mm, 50×150mm, 50×100mm, 40×200mm, 40×150mm",
-              "Rectangle: 40×200mm, 50×200mm",
-              "Prism: 40×40×80mm"
-            ],
-            "specs": [
-              "Ash content: 7% – 20%",
-              "Burn time: 5 – 9 hours",
-              "Fixed carbon: 65% – 70%",
-              "Smokeless • Food grade"
-            ]
+            "sizes": ["Hexagonal: 50x200mm, 50x150mm, 50x100mm, 40x200mm, 40x150mm", "Rectangle: 40x200mm, 50x200mm", "Prism: 40x40x80mm"],
+            "specs": ["Ash content: 7% - 20%", "Burn time: 5 - 9 hours", "Fixed carbon: 65% - 70%", "Smokeless - Food grade"]
           }
         ]
       }
@@ -423,64 +384,64 @@
     "shisha": {
       "title": "Shisha Briquettes",
       "subtitle": "Also known as hookah or shisha charcoal",
-      "description": "These briquettes are a special type of charcoal used to smoke flavored tobacco inside a water pipe called a hookah or shisha pipe. Shisha briquettes are specifically designed to provide a consistent and long-lasting heat source for the tobacco mixture so that it can be heated and vaporized without direct combustion.",
-      "paragraph2": "Our shisha briquettes are made from natural materials. They are specially formulated to burn at lower temperatures and produce minimal smoke while still generating enough heat to vaporize flavorful tobacco.",
-      "paragraph3": "Shisha briquettes can vary in shape and size but are generally available in cubes and flats. These briquettes are often infused with additives or flavorings to enhance the smoking experience and add a subtle taste to the tobacco.",
-      "benefits": "Shisha briquettes have gained popularity due to their consistent heat output, longer burn time, and less smoke production compared to traditional charcoal. These briquettes provide a smoother and more pleasant smoking experience, allowing users to enjoy the flavor of tobacco without the harshness of direct combustion.",
-      "note": "Shisha briquettes are specifically intended for use with hookahs or shisha pipes and should not be used as cooking fuel or in other applications.",
+      "description": "These briquettes are a special type of charcoal used to smoke flavored tobacco inside a water pipe called a hookah or shisha pipe.",
+      "paragraph2": "Our shisha briquettes are made from natural materials, specially formulated to burn at lower temperatures and produce minimal smoke.",
+      "paragraph3": "Shisha briquettes can vary in shape and size but are generally available in cubes and flats.",
+      "benefits": "Shisha briquettes have gained popularity due to their consistent heat output, longer burn time, and less smoke production compared to traditional charcoal.",
+      "note": "Shisha briquettes are specifically intended for use with hookahs or shisha pipes and should not be used as cooking fuel.",
       "shapes": {
         "cube": {
           "name": "Cube",
-          "sizes": ["20 × 20 × 20 mm", "22 × 22 × 22 mm", "25 × 25 × 25 mm", "26 × 26 × 26 mm"]
+          "sizes": ["20 x 20 x 20 mm", "22 x 22 x 22 mm", "25 x 25 x 25 mm", "26 x 26 x 26 mm"]
         },
         "flat": {
           "name": "Flat",
-          "sizes": ["25 × 25 × 15 mm"]
+          "sizes": ["25 x 25 x 15 mm"]
         }
       },
       "specs": {
-        "ashContent": "Ash content: 1.8% – 2.5%",
+        "ashContent": "Ash content: 1.8% - 2.5%",
         "ashColor": "Ash color: Light Grey / Natural",
-        "burningTime": "Burning time: 90 – 120 minutes",
-        "ignitionTime": "Ignition time: <4 minutes",
+        "burningTime": "Burning time: 90 - 120 minutes",
+        "ignitionTime": "Ignition time: less than 4 minutes",
         "fixCarbon": "Fixed carbon: Minimal 80%",
         "moisture": "Moisture: Max 5%",
         "volatileMatter": "Volatile matter: 14%",
-        "calorificValue": "Calorific value: 7000 – 7500 Kcal/kg"
+        "calorificValue": "Calorific value: 7000 - 7500 Kcal/kg"
       }
     },
     "bbq": {
       "title": "Barbecue Briquettes",
       "subtitle": "Also known as charcoal briquettes",
-      "description": "Barbecue briquettes are a type of fuel used for grilling and barbecuing. These briquettes are specifically designed to provide a consistent and controlled heat source for outdoor cooking.",
-      "paragraph2": "Barbecue briquettes are typically made from a combination of charcoal, coal, wood, or other organic materials that have been processed and compressed into a uniform form. The materials are often mixed with binders or additives to help the briquettes retain their shape and provide consistent burning characteristics.",
-      "paragraph3": "The manufacturing process involves carbonizing the organic material at high temperatures to remove impurities and moisture, resulting in a more concentrated and efficient fuel source. The carbonization process also contributes to the formation of the distinctive black color in these charcoal briquettes.",
-      "benefits": "Barbecue briquettes offer several advantages for grilling and barbecuing. They provide a stable and long-lasting heat source, allowing for even cooking and consistent temperatures. These briquettes also produce less smoke compared to other forms of charcoal, resulting in fewer fire flare-ups and a cleaner grilling experience.",
-      "varieties": "Barbecue briquettes often come in a variety of shapes and sizes to accommodate different grilling needs. The most prevalent on the market are stick and hexagonal shapes. However, they can come in traditional pillow-shaped briquettes, as well as larger briquettes or pieces of briquettes for longer cooking sessions or larger grills.",
-      "note": "Barbecue briquettes are specifically designed for outdoor cooking and should not be used indoors or in enclosed spaces due to the release of carbon monoxide during combustion. It is also important to follow proper safety guidelines when handling and disposing of used briquettes to prevent fire hazards.",
+      "description": "Barbecue briquettes are a type of fuel used for grilling and barbecuing.",
+      "paragraph2": "Barbecue briquettes are typically made from a combination of charcoal, coal, wood, or other organic materials.",
+      "paragraph3": "The manufacturing process involves carbonizing the organic material at high temperatures to remove impurities and moisture.",
+      "benefits": "Barbecue briquettes offer several advantages for grilling and barbecuing, providing a stable and long-lasting heat source.",
+      "varieties": "Barbecue briquettes often come in a variety of shapes and sizes to accommodate different grilling needs.",
+      "note": "Barbecue briquettes are specifically designed for outdoor cooking and should not be used indoors.",
       "shapes": {
         "hexagonal": {
           "name": "Hexagonal",
-          "sizes": ["50 × 200 mm", "50 × 150 mm", "50 × 100 mm", "50 × 50 mm", "40 × 200 mm", "40 × 150 mm", "40 × 100 mm", "40 × 50 mm"]
+          "sizes": ["50 x 200 mm", "50 x 150 mm", "50 x 100 mm", "50 x 50 mm", "40 x 200 mm", "40 x 150 mm", "40 x 100 mm", "40 x 50 mm"]
         },
         "rectangle": {
           "name": "Rectangle",
-          "sizes": ["40 × 200 mm", "50 × 200 mm"]
+          "sizes": ["40 x 200 mm", "50 x 200 mm"]
         },
         "prism": {
           "name": "Rectangular Prism",
-          "sizes": ["40 × 40 × 80 mm"]
+          "sizes": ["40 x 40 x 80 mm"]
         }
       },
       "specs": {
-        "ashContent": "Ash content: 7% – 20%",
+        "ashContent": "Ash content: 7% - 20%",
         "ashColor": "Ash color: Light Grey / Natural",
-        "burningTime": "Burning time: 5 – 9 hours",
-        "ignitionTime": "Ignition time: <5 minutes",
-        "fixCarbon": "Fixed carbon: 65% – 70%",
+        "burningTime": "Burning time: 5 - 9 hours",
+        "ignitionTime": "Ignition time: less than 5 minutes",
+        "fixCarbon": "Fixed carbon: 65% - 70%",
         "moisture": "Moisture: Max 5%",
         "volatileMatter": "Volatile matter: 14%",
-        "calorificValue": "Calorific value: 6400 – 7200 Kcal/kg"
+        "calorificValue": "Calorific value: 6400 - 7200 Kcal/kg"
       },
       "features": ["Smokeless", "Odorless", "No spark", "No chemical", "Food grade"]
     },
