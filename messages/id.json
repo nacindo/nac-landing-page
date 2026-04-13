@@ -455,6 +455,10 @@
     "customNote": "Kami juga menyediakan briket dengan spesifikasi khusus, dan kemasan dengan ukuran, merek, dan desain khusus. Silakan hubungi kami.",
     "noteFromUs": "Catatan dari kami",
     "backButton": "Kembali ke Komoditas",
-    "inquireButton": "Tanyakan Sekarang"
+    "inquireButton": "Tanyakan Sekarang",
+"cta": {
+  "title": "Tertarik dengan briket kami?",
+  "description": "Hubungi kami untuk harga, sampel, dan spesifikasi khusus. Kami siap memenuhi kebutuhan bisnis Anda."
+}
   }
 }
