@@ -94,8 +94,8 @@ const ExportSelectedCommodities = () => {
 				<div className="mt-6 w-full">
 					<Link href="/export-import/our-commodities">
 						<button className="btn btn-secondary btn-outline w-full">
-							See All Commodities
-						</button>
+    {t('seeAll')}
+</button>
 					</Link>
 				</div>
 			</div>
