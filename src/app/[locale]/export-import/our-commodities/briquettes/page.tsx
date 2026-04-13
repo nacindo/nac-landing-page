@@ -358,11 +358,11 @@ export default function BriquettesPage() {
 			<section className="py-10 sm:py-16 lg:py-20">
 				<div className="container text-center">
 					<h2 className="text-xl sm:text-2xl font-bold lg:text-3xl">
-						Interested in our briquettes?
-					</h2>
-					<p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-						Contact us for pricing, samples, and custom specifications. We&apos;re ready to meet your business needs.
-					</p>
+    {t('cta.title')}
+</h2>
+<p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+    {t('cta.description')}
+</p>
 					<a
 						href="mailto:trade@nusantara.example?subject=Briquettes%20Inquiry"
 						className="inline-flex mt-8"
